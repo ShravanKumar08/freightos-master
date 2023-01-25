@@ -21,4 +21,8 @@ Route::get('/', function () {
 
 Route::post('register',[UserController::class,'register']);
 Route::post('login',[UserController::class,'login']);
-Route::resource('bookings', BookingController::class);
+Route::get('bookings',[BookingController::class,'index']);
+Route::post('bookings',[BookingController::class,'store']);
+Route::get('booking_options',[BookingController::class,'options']);
+Route::get('cancellation',[BookingController::class,'cancellation']);
+// Route::resource('bookings', BookingController::class);

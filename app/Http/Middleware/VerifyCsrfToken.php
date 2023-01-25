@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'http://localhost/laravel/freightos/public/register'
+        'http://localhost/laravel/freightos/public/*'
     ];
 }

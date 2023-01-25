@@ -13,7 +13,7 @@ class CreateClassBookingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('class_bookings', function (Blueprint $table) {
+        Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('user_id');

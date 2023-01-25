@@ -14,4 +14,14 @@ class Booking extends Model
     protected $fillable = [
         'id', 'class_room_id', 'user_id', 'date', 'start_time', 'end_time', 'cancelled'
     ];
+
+    public function class_room()
+    {
+        return $this->belongsTo('App\ClassRoom');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }
